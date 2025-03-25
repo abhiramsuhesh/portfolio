@@ -1,0 +1,828 @@
+<html>
+  <head>
+    <title>Dezven Portfolio Website Template </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!--- Bootstrap 5 CSS link --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--- Font Awesom CSS link --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--- Google Font Family --->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ 	<!--- Live Jquery URL--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--- Bootstrap 5 Jquery URL--->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--- Owl Carousel Js And CSS For Testimonial Slider--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!--- style.css, where we will write our custom css--->
+    <link rel="stylesheet" href="css/style.css">
+  
+    <style>
+    
+    *{
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+  text-decoration: none;
+  scroll-behavior: smooth;
+  background-color: #242732;
+    }
+    /****** COMMON CSS ******/
+	body {
+	font-size: 14px;
+	font-family:poppins, sans-serif;
+	color: #242732;
+    }
+    .bg-image {
+	background: url('../image/banner.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+    }
+        /****** LOGO, MENU AND ABOUT DETAILS SECTION ******/
+.navbar {
+	padding-top: 35px;
+}
+.navbar-brand {
+	font-size: 30px;
+	color: white;
+}
+.offcanvas-header {
+	justify-content: end;
+}
+.nav-link {
+	color: black;
+}
+.info {
+	padding-top: 15px;
+}
+.info p {
+	margin: 0px;
+}
+.navbar .info a {
+	font-size: 23px;
+	color: black;
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+/********* ABOUT US SECTION  *******/
+.about-detail {
+	padding-top: 35%;
+	padding-bottom: 100px;
+}
+.about-detail h5 {
+	font-size: 40px;
+	margin-bottom: 15px;
+	color: white;
+	font-weight: 400;
+}
+.about-detail h1 {
+	font-size: 58px;
+	margin-bottom: 10px;
+	color: white;
+	font-weight: bolder;
+}
+.about-detail p {
+	font-size: 22px;
+	color: white;
+	line-height: 28px;
+}
+.about-detail button {
+	border: none;
+	padding: 15px 40px;
+	margin-top: 15px;
+	color: white;
+	background: #ef6735;
+}
+.about-detail button i {
+	font-size: 15px;
+	margin-left: 5px;
+}
+/*.typing {
+	position: relative;
+	width: fit-content;
+	padding-right: 20px;
+}
+.typing::after {
+	content: "|";
+	position: absolute;
+	right: 0;
+	width: 100%;
+	background: #212121;
+	animation: typing 6s steps(22) infinite, caret 1s infinite;
+}*/
+@-webkit-keyframes typing {
+	to {
+		width: 0;
+	}
+}
+@keyframes typing {
+	to {
+		width: 0;
+	}
+}
+@-webkit-keyframes caret {
+	50% {
+		color: transparent;
+	}
+}
+@keyframes caret {
+	50% {
+		color: transparent;
+	}
+}
+@media screen and (max-width:768px) {
+	.about-detail h5 {
+		font-size: 25px;
+	}
+	.about-detail h1 {
+		font-size: 38px !important;
+	}
+}
+@media screen and (max-width:500px) {
+	.about-detail {
+		padding-top: 15%;
+		padding-bottom: 60px;
+	}
+	.about-detail h5 {
+		font-size: 20px;
+	}
+	.about-detail h1 {
+		font-size: 35px !important;
+		margin-bottom: 5px !important;
+	}
+}
+.banner-img {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+.banner-img img {
+	position: absolute;
+	bottom: 0px;
+	width: 90%;
+}
+@media screen and (max-width:768px) {
+	.banner-img {
+		height: 100%;
+	}
+}
+@media screen and (max-width:500px) {
+	.banner-img {
+		height: auto;
+	}
+	.banner-img img {
+		position: relative;
+	}
+}
+ /*************** ABOUT US SECTION ***************/
+ .bg-color {
+	background-color: #eaedf2;
+}
+.about-left img {
+	width: 100%;
+}
+.about-right {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.about-right h2 {
+	font-size: 35px;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.about-right h6 {
+	color: #f90505;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+.about-right p {
+	line-height: 35px;
+	font-size: 16px;
+	margin-bottom: 50px;
+	letter-spacing: 0.2px;
+	word-spacing: 0.5px;
+}
+.about-right p span {
+	color: black;
+	font-weight: 600;
+	border-bottom: 3px solid red;
+}
+.about-right table tr td {
+	padding: 10px;
+}
+@media screen and (max-width:768px) {
+	.about-right table tr td,
+	.about-right table tr th {
+		padding: 10px 0px;
+		font-size: 13px;
+	}
+}
+@media screen and (max-width:500px) {
+	.about-right table tr td,
+	.about-right table tr th {
+		padding: 10px;
+		font-size: 16px;
+	}
+}
+/***************COUNTER SECTION ***************/
+.counter {
+	background: white;
+	padding: 50px 40px;
+	position: relative;
+	top: -50px;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+}
+.counter-icon {
+	float: left;
+}
+.counter-icon i {
+	font-size: 50px;
+	color: #FF5722;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+.counter-icon h5 {
+	font-size: 41px;
+	color: black;
+	font-weight: 600;
+	margin: 0px;
+}
+.counter-icon p {
+	margin: 0px;
+	line-height: 10px;
+	font-size: 14px;
+}
+@media screen and (max-width:768px) {
+	.counter {
+		padding: 20px 20px;
+	}
+	.counter .col-6 {
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width:500px) {
+	.counter {
+		padding: 10px 10px;
+	}
+	.counter .col-6 {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	.counter-icon i {
+		font-size: 30px;
+		margin-right: 5px;
+	}
+	.counter-icon h5 {
+		font-size: 25px;
+	}
+}
+/**********SKILL SECTION SKILL SECTION SKILL SECTION  *********/
+.about-skill {
+	padding: 50px 0px;
+}
+.about-skill p {
+	font-size: 19px;
+	line-height: 30px;
+	color: black;
+}
+.about-skill p span {
+	color: red;
+	font-weight: 600;
+}
+.skill-section {
+	font-size: 25px;
+	color: black;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+.skill-section p {
+	float: left;
+	margin-bottom: 4px;
+	color: black;
+	font-size: 15px;
+}
+.skill-section span {
+	float: right;
+	margin-bottom: 5px;
+	color: black;
+	font-size: 15px;
+	margin-right: 40px;
+}
+.skill-experience {
+	width: 100%;
+	float: left;
+	background: #e7e7e7;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+.skill-experience span {
+	background: red;
+	height: 5px;
+	float: left;
+}
+/*********HEADING SECTION HEADING SECTION *********/
+.heading-section {
+	padding-bottom: 30px;
+	padding-top: 80px;
+}
+.heading-section h2 {
+	text-align: center;
+	color: black;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.heading-section p {
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.heading-borders {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.heading-borders span {
+	border: 1px solid red;
+	width: 5%;
+	margin-bottom: 20px;
+}
+@media screen and (max-width:768px) {
+	.heading-section h2 {
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+	.heading-borders span {
+		width: 8%;
+	}
+}
+@media screen and (max-width:500px) {
+	.heading-borders span {
+		width: 25%;
+	}
+	.heading-section h2 {
+		font-size: 30px;
+	}
+}
+/*********SERVICES SECTION SERVICES SECTION S*********/
+.service-section {
+	width: 100%;
+	border: none;
+	background: white;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+	padding: 55px 40px;
+	text-align: center;
+	margin-bottom: 30px;
+	float: left;
+}
+.service-section img {
+	height: 105px;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+.service-section h6 {
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	color: black;
+}
+.service-section p {
+	line-height: 30px;
+	font-size: 15px;
+}
+.service-border {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.service-border span {
+	border: 1px solid red;
+	width: 11%;
+	margin-bottom: 20px;
+}
+@media screen and (max-width:768px) {
+	.service-section {
+		padding: 20px 20px;
+	}
+}
+@media screen and (max-width:500px) {
+	.service-section {
+		padding: 20px 20px;
+	}
+}
+
+/*********PORTFOLIO SECTION PORTFOLIO SECTION*********/
+.portfolio-section {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.portfolio-section img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+/*********HEADING SECTION HEADING SECTION*********/
+.heading-section {
+	padding-bottom: 30px;
+	padding-top: 80px;
+}
+.heading-section h2 {
+	text-align: center;
+	color: black;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.heading-section p {
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.heading-borders {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.heading-borders span {
+	border: 1px solid red;
+	width: 5%;
+	margin-bottom: 20px;
+}
+@media screen and (max-width:768px) {
+	.heading-section h2 {
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+	.heading-borders span {
+		width: 8%;
+	}
+}
+@media screen and (max-width:500px) {
+	.heading-borders span {
+		width: 25%;
+	}
+	.heading-section h2 {
+		font-size: 30px;
+	}
+}
+
+
+
+  
+  
+  
+    </style>
+
+
+
+</head>
+  <body>
+    	<!--- LOGO, MENU AND ABOUT DETAILS SECTION --->
+ <div class="container-fluid bg-image">
+    <div class="container">
+      <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="#">Portfolio..</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <div class="info">
+                <p>Let's work together?</p>
+                <a href="#">info@dezven.com</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="about-detail">
+            <h5>Hello,</h5>
+            <h1>I'm Shail Dezven</h1>
+            <p class="typing">I Am Passionate <span>Designer|</span>
+            </p>
+            <button>CONTACT US <i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <div class="banner-img">
+            <img src="image/about.png" style="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!---ABOUT US SECTION ABOUT US SECTION ABOUT US SECTION  -->
+    <div class="container-fluid bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-12">
+              <div class="about-right">
+                <h2>About Me</h2>
+                <h6>A Lead UX & UI designer based in Canada</h6>
+                <p>I <span>design and develop</span> services for customers Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <table>
+                      <tr>
+                        <th>Birthday :</th>
+                        <td>/ 4th april 1998</td>
+                      </tr>
+                      <tr>
+                        <th>Age :</th>
+                        <td>/ 25 Yr</td>
+                      </tr>
+                      <tr>
+                        <th>Residence :</th>
+                        <td>/ Canada</td>
+                      </tr>
+                      <tr>
+                        <th>Address :</th>
+                        <td>/ Ring Road USA</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="col-md-6">
+                    <table>
+                      <tr>
+                        <th>Email :</th>
+                        <td>/ info@dezven.com</td>
+                      </tr>
+                      <tr>
+                        <th>Phone :</th>
+                        <td>/ 9926 66 14 18</td>
+                      </tr>
+                      <tr>
+                        <th>Freelancer :</th>
+                        <td>/ Available</td>
+                      </tr>
+                      <tr>
+                        <th>Address :</th>
+                        <td>/ Ring Road USA</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-4 col-12">
+              <div class="about-left">
+                <img src="image/about-us.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---COUNTER SECTION COUNTER SECTION COUNTER SECTION -->
+<div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 counter">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-6">
+              <span class="counter-icon">
+                <i class="fa fa-hand-peace-o"></i>
+              </span>
+              <span class="counter-icon">
+                <h5>9</h5>
+                <p>Total Experience</p>
+              </span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <span class="counter-icon">
+                <i class="fa fa-smile-o"></i>
+              </span>
+              <span class="counter-icon">
+                <h5>500</h5>
+                <p>Happy Clients</p>
+              </span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <span class="counter-icon">
+                <i class="fa fa-thumbs-up"></i>
+              </span>
+              <span class="counter-icon">
+                <h5>500</h5>
+                <p>Project Complete</p>
+              </span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
+              <span class="counter-icon">
+                <i class="fa fa-trophy"></i>
+              </span>
+              <span class="counter-icon">
+                <h5>500</h5>
+                <p>Award Win</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>undefined
+  </div>
+
+
+  <!--------------SKILL SECTION SKILL SECTION SKILL SECTION ------------->
+<div class="container-fluid about-skill">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 col-md-6">
+          <p>I <span>design and develop services</span> for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores. Lorem Ipsum is simply dummy text of the <span>printing and typesetting industry</span>. Lorem Ipsum has been the industry's standard dummy text. </p>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="skill-section">
+            <p>Facebook Marketing</p>
+            <span>95%</span>
+          </div>
+          <div class="skill-experience">
+            <span style="width:95%"></span>
+          </div>
+          <div class="skill-section">
+            <p>Search Engine</p>
+            <span>65%</span>
+          </div>
+          <div class="skill-experience">
+            <span style="width:65%"></span>
+          </div>
+          <div class="skill-section">
+            <p>Content Writing</p>
+            <span>79%</span>
+          </div>
+          <div class="skill-experience">
+            <span style="width:79%"></span>
+          </div>
+          <div class="skill-section">
+            <p>Web Writing</p>
+            <span>89%</span>
+          </div>
+          <div class="skill-experience">
+            <span style="width:89%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--------------SERVICES SECTION SERVICES SECTION ------------->
+<div class="container-fluid bg-color pb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="heading-section">
+            <h2>What I Do</h2>
+            <div class="heading-borders">
+              <span class="selected"></span>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Apple has been the standard dummy text. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-section">
+            <img src="image/service-1.png">
+            <h6>Unique design</h6>
+            <div class="service-border">
+              <span></span>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Apple has been the standard dummy text..</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-section">
+            <img src="image/service-2.png">
+            <h6>Different Layout</h6>
+            <div class="service-border">
+              <span></span>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Apple has been the standard dummy text..</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-section">
+            <img src="image/service-3.png">
+            <h6>Make it Simple</h6>
+            <div class="service-border">
+              <span></span>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Apple has been the standard dummy text..</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-section">
+            <img src="image/service-4.png">
+            <h6>Responsiveness</h6>
+            <div class="service-border">
+              <span></span>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Apple has been the standard dummy text..</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-section">
+            <img src="image/service-5.png">
+            <h6>Testing for Perfection</h6>
+            <div class="service-border">
+              <span></span>
+            </div>
+            <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Apple has been the standard dummy text..</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-section">
+            <img src="image/service-6.png">
+            <h6>Advanced Options</h6>
+            <div class="service-border">
+              <span></span>
+            </div>
+            <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Apple has been the standard dummy text..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--- PORTFOLIO SECTION PORTFOLIO SECTION PORTFOLIO SECTION --->
+ <div class="container-fluid pb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="heading-section">
+            <h2>Portfolio</h2>
+            <div class="heading-borders">
+              <span class="selected"></span>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Apple has been the standard dummy text. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="portfolio-section">
+            <img src="image/gallery-1.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="portfolio-section">
+            <img src="image/gallery-2.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="portfolio-section">
+            <img src="image/gallery-3.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="portfolio-section">
+            <img src="image/gallery-4.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="portfolio-section">
+            <img src="image/gallery-5.jpg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="portfolio-section">
+            <img src="image/gallery-6.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  </body>
+</html>
